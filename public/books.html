@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only"></span></a>
           <a class="nav-item nav-link" href="aboutme.html">About Me</a>
           <a class="nav-item nav-link" href="books.html">Books</a>
         </div>
@@ -26,5 +26,86 @@
     </nav>
   </div>
 
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Year Published</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Page Count</th>
+        <th scope="col">MSRP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>1960</td>
+        <td>J. B. Lippincott & Co.</td>
+        <td>281</td>
+        <td>$7.19</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>1925</td>
+        <td>Charles Scribner's Sons</td>
+        <td>218</td>
+        <td>$18.29</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Things Fall Apart</td>
+        <td>Chinua Achebe</td>
+        <td>1958</td>
+        <td>William Heinemann Ltd.</td>
+        <td>224</td>
+        <td>$6.69</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Moby Dick</td>
+        <td>Herman Melville</td>
+        <td>1851</td>
+        <td>Harper & Brothers</td>
+        <td>585</td>
+        <td>$12.11</td>
+      </tr>
+    </tbody>
+  </table>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Book Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter book title">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Author Name</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the authors name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Year Published</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the year the book was published">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Page Count</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the page count">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Publication Company</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the publisher">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">MSRP</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the selling price">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 </body>
 </html>
