@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>Books</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/site.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
@@ -43,65 +44,65 @@
         <th scope="row">1</th>
         <td>To Kill a Mockingbird</td>
         <td>Harper Lee</td>
-        <td>1960</td>
-        <td>J. B. Lippincott & Co.</td>
-        <td>281</td>
-        <td>$7.19</td>
+        <td type:"date">1960</td>
+        <td type:"string">J. B. Lippincott & Co.</td>
+        <td type="integer">281</td>
+        <td type="currency">$7.19</td>
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>The Great Gatsby</td>
         <td>F. Scott Fitzgerald</td>
-        <td>1925</td>
-        <td>Charles Scribner's Sons</td>
-        <td>218</td>
-        <td>$18.29</td>
+        <td type:"date">1925</td>
+        <td type:"string">Charles Scribner's Sons</td>
+        <td type="integer">218</td>
+        <td type="currency">$18.29</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td>Things Fall Apart</td>
         <td>Chinua Achebe</td>
-        <td>1958</td>
-        <td>William Heinemann Ltd.</td>
-        <td>224</td>
-        <td>$6.69</td>
+        <td type:"date">1958</td>
+        <td type:"string">William Heinemann Ltd.</td>
+        <td type="integer">224</td>
+        <td type="currency">$6.69</td>
       </tr>
       <tr>
         <th scope="row">4</th>
         <td>Moby Dick</td>
         <td>Herman Melville</td>
-        <td>1851</td>
-        <td>Harper & Brothers</td>
-        <td>585</td>
-        <td>$12.11</td>
+        <td type:"date">1851</td>
+        <td type:"string">Harper & Brothers</td>
+        <td type="integer">585</td>
+        <td type="currency">$12.11</td>
       </tr>
     </tbody>
   </table>
 <div>
   <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Book Name</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter book title">
+      <label for="name">Book Name</label>
+      <input type="string" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter book title">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Author Name</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the authors name">
+      <label for="aname">Author Name</label>
+      <input type="string" class="form-control" id="aname" placeholder="Enter the authors name">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Year Published</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the year the book was published">
+      <label for="year">Year Published</label>
+      <input type="date" class="form-control" id="year" placeholder="Enter the year the book was published">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Page Count</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the page count">
+      <label for="pagecount">Page Count</label>
+      <input type="integer" class="form-control" id="pagecount" placeholder="Enter the page count">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Publication Company</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the publisher">
+      <label for="company">Publication Company</label>
+      <input type="string" class="form-control" id="company" placeholder="Enter the publisher">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">MSRP</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter the selling price">
+      <label for="price">MSRP</label>
+      <input type="currency" class="form-control" id="price" placeholder="Enter the selling price">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
